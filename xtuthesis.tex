@@ -1,0 +1,23 @@
+\documentclass[CJK,GBK,UTF8,12pt,oneside,a4paper]{ctexbook}
+%----------------------------------------packages and format-----------------
+\input{setup/package.tex}
+\input{setup/format.tex}
+\graphicspath{{figures/}}
+
+\begin{document}
+%----------------------------------------cover-------------------------------
+\include{preface/cover}
+\include{preface/license}
+\include{preface/abstract}
+%----------------------------------------table content-----------------------
+\newpage
+\tableofcontents
+\pagenumbering{arabic}
+%----------------------------------------body--------------------------------
+\include{body/introduction}
+%----------------------------------------reference---------------------------
+\include{reference/references}
+%----------------------------------------thanks------------------------------
+\include{body/thank}
+\include{body/aboutme}
+\end{document} 
