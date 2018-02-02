@@ -65,9 +65,22 @@
 \CTEXsetup[format={\flushleft\sffamily\heiti\zihao{-4}}]{subsubsection}
 \CTEXsetup[beforeskip={12pt},afterskip={6pt}]{subsubsection}
 
-\newlength\imagewidth
-\setlength\imagewidth{0.45\columnwidth}
+\newlength\oneimage
+\setlength\oneimage{0.8\textwidth}
 
+\newlength\twoimage
+\setlength\twoimage{0.45\textwidth}
+
+\newlength\threeimage
+\setlength\threeimage{0.3\textwidth}
+
+%---罗马数字--------
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%---将Algorithm改为中文宋体“算法”--------
+\renewcommand{\algorithmcfname}{\songti 算法}
+\makeatletter
+\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo\quad \AlCapFnt{}#2}
 \makeatother
