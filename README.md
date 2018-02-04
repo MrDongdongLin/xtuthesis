@@ -12,4 +12,6 @@
 - 编译有问题的话多重复上一步骤直到没有问题即可。
 - 在主目录下得到pdf文件，执行`texclear.bat`清理多余的文件。
 
+![latexcompile](https://github.com/MrDongdongLin/src/blob/master/weixin/latex_compile.gif)
+
 Copyright 2018 林东东
