@@ -8,12 +8,18 @@
 %----------------------------------------cover-------------------------------
 \include{preface/cover}
 \include{preface/license}
+% 从摘要开始用罗马数字编号
+\pagestyle{plain}
+\pagenumbering{Roman}
 \include{preface/abstract}
 %----------------------------------------table content-----------------------
 \newpage
 \tableofcontents
 %----------------------------------------body--------------------------------
 \songti\zihao{-4}
+% 从第一章开始用阿拉伯数字编号
+\newpage
+\pagenumbering{arabic}
 \include{body/introduction}
 \include{body/thesisformat}
 \include{body/bibliography}
