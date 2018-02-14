@@ -1,0 +1,242 @@
+%---中文封面--------------------------------------------------------------------------
+\makeatletter
+\newcommand*{\schoolcode}[1]{\gdef\@schoolcode{#1}}
+\newcommand*{\studentid}[1]{\gdef\@studentid{#1}}
+\newcommand*{\cntitle}[1]{\gdef\@cntitle{#1}}
+\newcommand*{\cnname}[1]{\gdef\@cnname{#1}}
+\newcommand*{\cnteacher}[1]{\gdef\@cnteacher{#1}}
+\newcommand*{\cncollege}[1]{\gdef\@cncollege{#1}}
+\newcommand*{\cnmajor}[1]{\gdef\@cnmajor{#1}}
+\newcommand*{\cnspcial}[1]{\gdef\@cnspcial{#1}}
+\newcommand*{\cndegree}[1]{\gdef\@cndegree{#1}}
+\newcommand*{\cnschool}[1]{\gdef\@cnschool{#1}}
+
+\newcommand*{\@schoolcode}{10530}
+\newcommand*{\makecntitle}{%
+\thispagestyle{empty}
+\begin{flushleft}
+    \makebox[17mm][s]{\heiti 学校代码}\underline{\makebox[35mm][c]{\@schoolcode}}\hfill\makebox[17mm][s]{\heiti 学号}\underline{\makebox[35mm][c]{\@studentid}}\\
+    \vskip0.2cm
+    \makebox[17mm][s]{\heiti 分类号}\underline{\makebox[35mm][c]{O241.82}}\hfill\makebox[17mm][s]{\heiti 密级}\underline{\makebox[35mm][c]{}}
+\end{flushleft}
+\vskip1.5cm
+\begin{center}
+    \includegraphics[scale=0.7]{figures/xtu.pdf}
+\end{center}
+\vskip0.3cm
+\begin{center}
+    \makebox[109mm][s]{\heiti\zihao{-0}硕士学位论文}
+\end{center}
+\vskip1.5cm
+\begin{center}
+    \heiti \zihao{2}\@cntitle
+\end{center}
+\vskip2.5cm
+\begin{center}
+    \makebox[30mm][s]{\heiti 学位申请人}\underline{\makebox[87mm][c]{\fangsong\zihao{3}\@cnname}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 指导老师}\underline{\makebox[87mm][c]{\fangsong\zihao{3}\@cnteacher}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学院名称}\underline{\makebox[87mm][c]{\fangsong\zihao{3}\@cncollege}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学科专业}\underline{\makebox[87mm][c]{\fangsong\zihao{3}\@cnmajor}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 研究方向}\underline{\makebox[87mm][c]{\fangsong\zihao{3}\@cnspcial}}
+\end{center}
+\vskip1.85cm
+\begin{center}
+    {\songti\zihao{3}\@date}
+\end{center}
+
+%----中文内封面------------------------------------------------------------------------------
+\newpage
+\thispagestyle{empty}
+\topskip 4.2cm
+\begin{center}
+    \heiti \zihao{1}\@cntitle
+\end{center}
+\vskip 4cm
+\begin{center}
+    \makebox[30mm][s]{\heiti 学位申请人}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnname}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 导师姓名及职称}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnteacher}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学院名称}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cncollege}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学科专业}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnmajor}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 研究方向}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnspcial}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学位申请级别}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cndegree}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 学位授予单位}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnschool}}\\
+    \vskip0.7cm
+    \makebox[30mm][s]{\heiti 论文提交日期}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@date}}
+\end{center}
+}
+\makeatother
+
+\makeatletter
+%----英文内封面-----------------------------------------------------------------------------
+\newcommand*{\candidate}[1]{\gdef\@candidate{#1}}
+\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
+\newcommand*{\college}[1]{\gdef\@college{#1}}
+\newcommand*{\program}[1]{\gdef\@program{#1}}
+\newcommand*{\specialization}[1]{\gdef\@specialization{#1}}
+\newcommand*{\degree}[1]{\gdef\@degree{#1}}
+\newcommand*{\university}[1]{\gdef\@university{#1}}
+
+\newcommand*{\makeentitle}{%
+\newpage
+\thispagestyle{empty}
+\topskip 4cm
+\begin{center}
+    \setmainfont{Arial}\huge\textbf{xxx}
+\end{center}
+\vskip 3.5cm
+\begin{center}
+    \makebox[135mm][l]{\textbf{Candidate}\underline{\makebox[112.5mm][c]{\@candidate}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{Supervisor}\underline{\makebox[112mm][c]{\@supervisor}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{College}\underline{\makebox[119mm][c]{\@college}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{Program}\underline{\makebox[116mm][c]{\@program}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{Specialization}\underline{\makebox[105mm][c]{\@specialization}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{Degree}\underline{\makebox[119.5mm][c]{\@degree}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{University}\underline{\makebox[112.5mm][c]{\@university}}}\\
+    \vskip0.7cm
+    \makebox[135mm][l]{\textbf{Date}\underline{\makebox[124.5mm][c]{\@date}}}
+\end{center}
+}
+\makeatother
+
+%---原创性声明------------------------------------------------------------------------
+%----原创声明和版权授权-----------------------------------------------------------------------
+\makeatletter
+\newcommand*{\makedeclare}{%
+\newpage
+\thispagestyle{empty}
+\topskip10mm
+\begin{center}
+    {\heiti\zihao{2}湘潭大学 \vskip5mm 学位论文原创性声明}
+\end{center}
+\songti\zihao{4}
+
+    ~本人郑重声明：所呈交的论文是本人在导师的指导下独立进行研究所取得的研究成果。除了文中特别加以
+标注引用的内容外，本论文不包含任何其他个人或集体已经发表或撰写的成果作品。对本文的研究做出重要贡
+献的个人和集体，均已在文中以明确方式标明。本人完全意识到本声明的法律后果由本人承担。
+\vskip8mm
+
+    ~作者签名：\hfill                          日期：\kern 1.6cm 年 \kern 0.8cm 月 \kern 0.8cm 日
+\vskip30mm
+\begin{center}
+    {\heiti\zihao{2}学位论文版权使用授权书}
+\end{center}
+
+    ~本学位论文作者完全了解学校有关保留、使用学位论文的规定，同意学校保留并向国家有关部门或机构送
+交论文的复印件和电子版，允许论文被查阅和借阅。本人授权湘潭大学可以将本学位论文的全部或部分内容编
+入有关数据库进行检索，可以采用影印、缩印或扫描等复制手段保存和汇编本学位论文。
+\par
+    ~涉密论文按学校规定处理。
+\vskip30mm
+
+    ~作者签名：\hfill~~~~~~~~~~~~~~~~~~~~~~~~~日期：\kern 1.6cm 年 \kern 0.8cm 月 \kern 0.8cm 日
+\vskip8mm
+
+    ~导师签名：\hfill~~~~~~~~~~~~~~~~~~~~~~~~~日期：\kern 1.6cm 年 \kern 0.8cm 月 \kern 0.8cm 日
+}
+\makeatother
+
+%---定制目录--------------------------------------------------------------------------
+\makeatletter
+\def\@bfdottedtocline#1#2#3#4#5{%
+ \ifnum #1>\c@tocdepth \else
+   \vskip \z@ \@plus.2\p@
+   {\leftskip #2\relax \rightskip \@tocrmarg \parfillskip -\rightskip
+    \parindent #2\relax\@afterindenttrue
+    \interlinepenalty\@M
+    \leavevmode \bfseries
+    \@tempdima #3\relax
+    \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+    {#4}\normalfont\nobreak
+    \leaders\hbox{$\m@th
+       \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+       mu$}\hfill
+    \nobreak
+    \hb@xt@\@pnumwidth{\hfil\normalfont \normalcolor #5}%
+    \par}%
+ \fi}
+\renewcommand*\l@chapter{\@bfdottedtocline{0}{0em}{1.5em}}
+\makeatother
+
+%---定理, 定义 等环境的设置---------------------------------------------------------------
+\newtheorem{definition}{\hspace{2em}定义}[section]
+\newtheorem{proposition}{\hspace{2em}命题}[section]
+\newtheorem{property}{\hspace{2em}性质}[section]
+\newtheorem{lemma}{\hspace{2em}引理}[section]
+\newtheorem{theorem}{\hspace{2em}定理}[section]
+\newtheorem{corollary}{\hspace{2em}推论}[section]
+\newtheorem{example}{\hspace{2em}例}
+\newtheorem{remark}{\hspace{2em}注}
+
+%---自定义命令和环境-----------------------------------------------------------------------
+\newenvironment{cnabstract}[1]{%
+    \chapter*{摘~~~~要}
+    \songti\zihao{-4}#1%
+    \vskip 0.2cm}
+
+\newenvironment{cnkeywords}[1]{%
+    \noindent{\heiti 关键词：}#1%
+}
+
+\newenvironment{enabstract}[1]{%
+    \chapter*{\setmainfont{Arial}\bf Abstract}#1%
+    \vskip 0.2cm
+}
+
+\newenvironment{enkeywords}[1]{%
+    \noindent{\bf Key Words: }#1%
+}
+
+\CTEXsetup[format={\centering\sffamily}]{chapter}
+\CTEXsetup[nameformat={\heiti\zihao{3}}]{chapter}
+\CTEXsetup[titleformat={\heiti\zihao{3}}]{chapter}
+\CTEXsetup[numberformat={\heiti\zihao{3}}]{chapter}
+\CTEXsetup[beforeskip={0pt},afterskip={30pt}]{chapter}
+\CTEXsetup[name={第, 章},number={\arabic{chapter}}]{chapter}
+
+\CTEXsetup[format={\flushleft\sffamily\heiti\zihao{4}}]{section}
+\CTEXsetup[beforeskip={24pt},afterskip={6pt}]{section}
+
+\CTEXsetup[format={\flushleft\sffamily\heiti\zihao{-4}}]{subsection}
+\CTEXsetup[beforeskip={12pt},afterskip={6pt}]{subsection}
+
+\CTEXsetup[format={\flushleft\sffamily\heiti\zihao{-4}}]{subsubsection}
+\CTEXsetup[beforeskip={12pt},afterskip={6pt}]{subsubsection}
+
+\newlength\oneimage
+\setlength\oneimage{0.8\textwidth}
+
+\newlength\twoimage
+\setlength\twoimage{0.45\textwidth}
+
+\newlength\threeimage
+\setlength\threeimage{0.3\textwidth}
+
+%---罗马数字--------
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%---将Algorithm改为中文宋体“算法”--------
+\renewcommand{\algorithmcfname}{\songti 算法}
+\makeatletter
+\renewcommand{\algocf@captiontext}[2]{#1\algocf@typo\quad \AlCapFnt{}#2}
+\makeatother
+
+% 上标引用
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}} 

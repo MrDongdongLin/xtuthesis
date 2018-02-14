@@ -1,3 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{XTUthesis}[2018/02/14 XTU Master Thesis Package]
+
+\RequirePackage{amsmath}
+\RequirePackage{latexsym}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}
+\RequirePackage{mathrsfs}
+\RequirePackage{bm}
+\RequirePackage{graphicx}
+\RequirePackage{color,xcolor}
+\RequirePackage[CJKbookmarks,hyperindex=true,
+            bookmarksnumbered=false,bookmarksopen=true,
+            colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}
+\RequirePackage[paperwidth=21cm,paperheight=29.7cm,
+            top=2.79cm,bottom=2.54cm,left=2.96cm,right=2.76cm,
+            headheight=1.2cm,headsep=0.07cm,footskip=1.27cm]{geometry}
+\RequirePackage{amscd}
+\RequirePackage[linesnumbered,ruled,vlined]{algorithm2e}
+\RequirePackage{slashbox}
+\RequirePackage{cite}
+
+\LoadClass[CJK,GBK,UTF8,12pt,oneside,a4paper]{ctexbook}
+
 %---定制目录--------------------------------------------------------------------------
 \makeatletter
 \def\@bfdottedtocline#1#2#3#4#5{%
@@ -83,7 +107,4 @@
 \renewcommand{\algorithmcfname}{\songti 算法}
 \makeatletter
 \renewcommand{\algocf@captiontext}[2]{#1\algocf@typo\quad \AlCapFnt{}#2}
-\makeatother 
-
-% 上标引用
-\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+\makeatother
