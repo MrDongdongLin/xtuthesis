@@ -10,8 +10,10 @@
 \newcommand*{\cnspcial}[1]{\gdef\@cnspcial{#1}}
 \newcommand*{\cndegree}[1]{\gdef\@cndegree{#1}}
 \newcommand*{\cnschool}[1]{\gdef\@cnschool{#1}}
+\newcommand*{\cdate}[1]{\gdef\@cdate{#1}}
 
 \newcommand*{\@schoolcode}{10530}
+\newcommand*{\@cdate}{\CTEXoptions[today=big]\today}
 \newcommand*{\makecntitle}{%
 \thispagestyle{empty}
 \begin{flushleft}
@@ -45,7 +47,7 @@
 \end{center}
 \vskip1.85cm
 \begin{center}
-    {\songti\zihao{3}\@date}
+    {\songti\zihao{3}\@cdate}
 \end{center}
 
 %----中文内封面------------------------------------------------------------------------------
@@ -71,7 +73,7 @@
     \vskip0.7cm
     \makebox[30mm][s]{\heiti 学位授予单位}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cnschool}}\\
     \vskip0.7cm
-    \makebox[30mm][s]{\heiti 论文提交日期}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@date}}
+    \makebox[30mm][s]{\heiti 论文提交日期}\underline{\makebox[66.5mm][c]{\fangsong\zihao{-4}\@cdate}}
 \end{center}
 }
 \makeatother
@@ -85,7 +87,9 @@
 \newcommand*{\specialization}[1]{\gdef\@specialization{#1}}
 \newcommand*{\degree}[1]{\gdef\@degree{#1}}
 \newcommand*{\university}[1]{\gdef\@university{#1}}
+\newcommand*{\edate}[1]{\gdef\@edate{#1}}
 
+\newcommand*{\@edate}{\CTEXoptions[today=old]\today}
 \newcommand*{\makeentitle}{%
 \newpage
 \thispagestyle{empty}
@@ -109,7 +113,7 @@
     \vskip0.7cm
     \makebox[135mm][l]{\textbf{University}\underline{\makebox[112.5mm][c]{\@university}}}\\
     \vskip0.7cm
-    \makebox[135mm][l]{\textbf{Date}\underline{\makebox[124.5mm][c]{\@date}}}
+    \makebox[135mm][l]{\textbf{Date}\underline{\makebox[124.5mm][c]{\@edate}}}
 \end{center}
 }
 \makeatother
