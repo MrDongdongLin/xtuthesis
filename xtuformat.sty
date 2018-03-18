@@ -1,3 +1,25 @@
+%s\usepackage{fontspec}
+\RequirePackage{amsmath}                                                                       % 排版数学公式
+\RequirePackage{latexsym}
+\RequirePackage{amsfonts}
+\RequirePackage{amssymb}                                                                       % 定义AMS的数学符号命令
+\RequirePackage{mathrsfs}                                                                      % 数学RSFS书写字体
+\RequirePackage{bm}                                                                            % 数学黑体
+\RequirePackage{graphicx}                                                                      % 支持插图,图形宏包graphics的扩展宏包
+\RequirePackage{color,xcolor}                                                                  % 支持彩色
+\RequirePackage[CJKbookmarks,hyperindex=true,
+            bookmarksnumbered=false,bookmarksopen=true,
+            colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}        % 超级链接
+\RequirePackage[paperwidth=21cm,paperheight=29.7cm,
+            top=2.79cm,bottom=2.54cm,left=2.96cm,right=2.76cm,
+            headheight=1.2cm,headsep=0.07cm,footskip=1.27cm]{geometry}                     % 简单灵活的页面设置界面
+\RequirePackage{amscd}
+\RequirePackage[linesnumbered,ruled,vlined]{algorithm2e}
+\RequirePackage{slashbox}
+\RequirePackage{cite}
+\RequirePackage{xtuformat}
+\RequirePackage[labelsep=space]{caption}
+
 %---中文封面--------------------------------------------------------------------------
 \makeatletter
 \newcommand*{\schoolcode}[1]{\gdef\@schoolcode{#1}}
@@ -80,6 +102,7 @@
 
 \makeatletter
 %----英文内封面-----------------------------------------------------------------------------
+\newcommand*{\entitle}[1]{\gdef\@entitle{#1}}
 \newcommand*{\candidate}[1]{\gdef\@candidate{#1}}
 \newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
 \newcommand*{\college}[1]{\gdef\@college{#1}}
@@ -95,7 +118,7 @@
 \thispagestyle{empty}
 \topskip 4cm
 \begin{center}
-    \setmainfont{Arial}\huge\textbf{xxx}
+    \setmainfont{Arial}\huge\textbf{\@entitle}
 \end{center}
 \vskip 3.5cm
 \begin{center}
