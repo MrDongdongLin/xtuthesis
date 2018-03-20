@@ -9,8 +9,8 @@
 ### 使用说明
 
 - 可参考本模板自行编写主文件，运行必需的文件有两个：
-	- xtuformat.sty -- 定义了论文相关的格式和命令
-	- xtu.pdf       -- 湘潭大学logo
+	- [xtuformat.sty](https://github.com/MrDongdongLin/xtuthesis/blob/master/xtuformat.sty) -- 定义了论文相关的格式和命令
+	- [xtu.pdf](https://github.com/MrDongdongLin/xtuthesis/blob/master/xtu.pdf)       -- 湘潭大学logo
 - 下载最新版CTeX套装：http://www.ctex.org/HomePage
 - 下载本项目：https://github.com/MrDongdongLin/xtuthesis/releases
 - 使用WinEdt打开`xtuthesis.tex`：
