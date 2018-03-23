@@ -4,6 +4,7 @@
 
 ### 下载使用
 
+CTAN收录地址：https://www.ctan.org/pkg/xtuthesis
 下载本项目，或者仅下载格式文件`xtuformat.sty`，参考文献的格式可另外下载。
 
 ### 使用说明
