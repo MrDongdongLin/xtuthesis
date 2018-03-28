@@ -13,7 +13,8 @@ filetype=".*\.aux\|\
 .*.toc\|\
 .*.bbl\|\
 .*.blg\|\
-.*.synctex*
+.*.synctex*\|\
+.*.thm
 "
 
 find . -regex $filetype | xargs rm -f

@@ -1,24 +1,41 @@
 %s\usepackage{fontspec}
-\RequirePackage{amsmath}                                                                       % 排版数学公式
+\RequirePackage{amsmath}              % 排版数学公式
+\RequirePackage{ntheorem}             % proof等环境
 \RequirePackage{latexsym}
 \RequirePackage{amsfonts}
-\RequirePackage{amssymb}                                                                       % 定义AMS的数学符号命令
-\RequirePackage{mathrsfs}                                                                      % 数学RSFS书写字体
-\RequirePackage{bm}                                                                            % 数学黑体
-\RequirePackage{graphicx}                                                                      % 支持插图,图形宏包graphics的扩展宏包
-\RequirePackage{color,xcolor}                                                                  % 支持彩色
-\RequirePackage[CJKbookmarks,hyperindex=true,
-            bookmarksnumbered=false,bookmarksopen=true,
-            colorlinks,linkcolor=black,anchorcolor=black,citecolor=black]{hyperref}        % 超级链接
-\RequirePackage[paperwidth=21cm,paperheight=29.7cm,
-            top=2.79cm,bottom=2.54cm,left=2.96cm,right=2.76cm,
-            headheight=1.2cm,headsep=0.07cm,footskip=1.27cm]{geometry}                     % 简单灵活的页面设置界面
+\RequirePackage{amssymb}              % 定义AMS的数学符号命令
+\RequirePackage{mathrsfs}             % 数学RSFS书写字体
+\RequirePackage{bm}                   % 数学黑体
+\RequirePackage{graphicx}             % 支持插图,图形宏包graphics的扩展宏包
+\RequirePackage{color,xcolor}         % 支持彩色
+\RequirePackage{hyperref}             % 超级链接
+\hypersetup{
+  CJKbookmarks=true,
+  bookmarksnumbered=false,
+  bookmarksopen=true,
+  colorlinks=true,
+  linkcolor=black,
+  anchorcolor=black,
+  citecolor=black,
+  urlcolor=green,
+}
+\RequirePackage{geometry}             % 简单灵活的页面设置界面
+\geometry{
+  paperwidth=21cm,
+  paperheight=29.7cm,
+  top=2.79cm,
+  bottom=2.54cm,
+  left=2.96cm,
+  right=2.76cm,
+  headheight=1.2cm,
+  headsep=0.07cm,
+  footskip=1.27cm,
+}
 \RequirePackage{amscd}
 \RequirePackage[linesnumbered,ruled,vlined]{algorithm2e}
 \RequirePackage{slashbox}
 \RequirePackage{cite}
 \RequirePackage{xtuformat}
-\RequirePackage[labelsep=space]{caption}
 
 %---中文封面--------------------------------------------------------------------------
 \makeatletter
@@ -209,6 +226,7 @@
 \newtheorem{corollary}{\hspace{2em}推论}[section]
 \newtheorem{example}{\hspace{2em}例}
 \newtheorem{remark}{\hspace{2em}注}
+\newtheorem*{proof}{\hspace{2em}证}
 
 %---自定义命令和环境-----------------------------------------------------------------------
 \newenvironment{cnabstract}[1]{%

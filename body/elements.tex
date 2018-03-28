@@ -1,7 +1,7 @@
 \chapter{图表，伪代码，公式相关排版}\label{elements}
 
 \section{图的排版}
-论文没图谁爱看呀！且看咱导言区不是已经加了``\\graphicspath{{figures/}}''吗？没错，
+论文没图谁爱看呀！且看咱导言区已经加了``\\graphicspath{{figures/}}''，
 你要做的就是把你的图放到``figures''文件夹下面。
 
 \subsection{单图}
@@ -54,7 +54,7 @@ a) image ``Lenna''; b) cipher-image of a).}
 \end{table}
 
 \section{伪代码}
-伪代码排版使用的是这方面最新的包algorithm2e，我们来看看算法\ref{qsort}（更多样例请google``algorithm2e''）：
+伪代码排版使用的是这方面最新的包algorithm2e，下面以算法\ref{qsort}为例（更多样例请google``algorithm2e''）：
 
 \begin{algorithm}[H]\label{qsort}
     \SetAlgoLined
@@ -74,7 +74,6 @@ a) image ``Lenna''; b) cipher-image of a).}
 \end{algorithm}
 
 \section{公式排版}
-论文没公式的话，难道你在写散文？
 已知$a+b=c$，那么
 
 \begin{equation*}\label{eq:aplusb}
@@ -86,3 +85,9 @@ a) image ``Lenna''; b) cipher-image of a).}
 \begin{equation}\label{eq:amultib}
   a*b=c.
 \end{equation}
+
+证明：
+
+\begin{proof}
+  地球是围着太阳转的
+\end{proof}
