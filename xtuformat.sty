@@ -1,4 +1,4 @@
-%s\usepackage{fontspec}
+%\usepackage{fontspec}
 \RequirePackage{amsmath}              % 排版数学公式
 \RequirePackage{ntheorem}             % proof等环境
 \RequirePackage{latexsym}
@@ -231,17 +231,16 @@
 %---自定义命令和环境-----------------------------------------------------------------------
 \newenvironment{cnabstract}[1]{%
     \chapter*{摘~~~~要}
-    \songti\zihao{-4}#1%
-    \vskip 0.2cm}
+    \songti\zihao{-4}%
+    \vskip 0.2cm \noindent #1}
 
 \newenvironment{cnkeywords}[1]{%
     \noindent{\heiti \zihao{-4}关键词：}\zihao{-4}#1%
 }
 
 \newenvironment{enabstract}[1]{%
-    \chapter*{\setmainfont{Arial}\bf Abstract}#1%
-    \vskip 0.2cm
-}
+    \chapter*{\setmainfont{Arial}\bf Abstract}%
+    \vskip 0.2cm \noindent #1}
 
 \newenvironment{enkeywords}[1]{%
     \noindent{\bf \zihao{-4}Key Words: }\zihao{-4}#1%
