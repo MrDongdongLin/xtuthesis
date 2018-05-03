@@ -150,7 +150,7 @@ FUNCTION {cmd.bibmodifydate}	{ "\providecommand{\bibmodifydate}[1]{#1}" }
 FUNCTION {cmd.bibcitedate} 		{ "\providecommand{\bibcitedate}[1]{#1}" }
 FUNCTION {cmd.bibyear} 			{ "\providecommand{\bibyear}[1]{#1}" }
 FUNCTION {cmd.bibdate} 			{ "\providecommand{\bibdate}[1]{#1}" }
-FUNCTION {cmd.biburl} 			{ "\providecommand{\biburl}[1]{\newline\url{#1}}" }
+FUNCTION {cmd.biburl} 			{ "\providecommand{\biburl}[1]{\url{#1}}" }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                                                   %

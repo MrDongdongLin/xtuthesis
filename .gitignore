@@ -1,5 +1,6 @@
 ## Extra add
 # *.sty
+# word_template
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
